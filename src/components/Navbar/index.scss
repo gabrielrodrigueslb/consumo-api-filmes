@@ -1,0 +1,12 @@
+$color_background: #0f172a;
+$color_text: #f7f7f7;
+$color-white: #ffffff;
+
+.navbar{
+    background: $color_background;
+    padding: 12px 3%;
+    
+    .page-title{
+        color: #fff;
+    }
+}

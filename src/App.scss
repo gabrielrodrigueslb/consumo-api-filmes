@@ -1,0 +1,14 @@
+$color_background: #020617;
+$color_text: #f7f7f7;
+$color-white: #ffffff;
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: $color_background;
+}
