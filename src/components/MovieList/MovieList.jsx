@@ -5,10 +5,6 @@ import MovieCard from '../MovieCard/MovieCard';
 
 import ReactLoading from 'react-loading';
 
-// chaveapi 0ce106132cb8f41a3ef20a2ba965f049
-
-// link https://api.themoviedb.org/3/discover/movie
-
 export default function MovieList() {
   const [movies, setMovies] = useState([]);
 
