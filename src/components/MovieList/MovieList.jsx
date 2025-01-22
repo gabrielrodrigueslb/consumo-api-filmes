@@ -26,7 +26,6 @@ export default function MovieList() {
       },
     }).then((response) => {
       setMovies(response.data.results);
-      console.log(response.data.results);
     });
 
     setIsLoading(false)
@@ -35,7 +34,7 @@ export default function MovieList() {
   if(isLoading){
     return(
       <div className='loading-container'>
-         <ReactLoading type='spin' color='#6046ff' height={'5%'} width={'5%'} />
+         <ReactLoading className='loading' type='spin' color='#6046ff' height={'5%'} width={'5%'} />
       </div>
     )
   }

@@ -3,9 +3,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: calc(100vh - 72px);
+    height: calc(100vh - 72px);
     max-width: 100%;
-    animation: slidein 5s linear 0s infinite;  
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0;
 }
 
 @keyframes slidein{

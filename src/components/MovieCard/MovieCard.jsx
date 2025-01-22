@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import StarRating from '../StarRate/StarRating';
 import './index.scss';
 import PropTypes from 'prop-types';
@@ -30,7 +31,7 @@ export default function MovieCard(props) {
                 : props.overview}
             </p>
           )}
-          <button className="btn-default">Ver mais</button>
+          <Link className="btn-default" to={`movie/${props.id}`}>Ver mais</Link>
         </div>
       </div>
     </li>

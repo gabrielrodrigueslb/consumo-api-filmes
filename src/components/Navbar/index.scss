@@ -5,8 +5,16 @@ $color-white: #ffffff;
 .navbar{
     background: $color_background;
     padding: 12px 3%;
+    display: flex;
+    align-items: center;
     
     .page-title{
         color: #fff;
+    }
+
+    .icon{
+        color: #fff;
+        font-size: 30px;
+        margin-right: 2px;
     }
 }

@@ -1,13 +1,18 @@
 import './App.scss'
-import MovieList from './components/MovieList/MovieList'
-import Navbar from './components/Navbar/Navbar'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import DetailsMovie from './pages/DetailsMovie'
 
 function App() {
 
   return (
     <>
-      <Navbar/>
-      <MovieList/>
+    <BrowserRouter>
+    <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='movie/:id' element={<DetailsMovie/>}/>
+    </Routes>
+    </BrowserRouter>
     </>
   )
 }
